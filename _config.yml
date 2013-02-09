@@ -1,1 +1,5 @@
 exclude: Gemfile, Gemfile.lock, README.md
+
+assets:
+  compress:
+    css: sass
