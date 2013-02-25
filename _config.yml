@@ -1,5 +1,4 @@
 exclude: Gemfile, Gemfile.lock, README.md
-paginate: 3
 assets:
   compress:
     css: sass
