@@ -1,3 +1,8 @@
+---
+layout: post
+title: Working with simplex noise
+---
+
 ![banner](/images/simplex_noise/banner.png)
 
 Recently, I've been getting into procedural content generation (PCG), with the end-goal of procedurally generating entire worlds.  When you consider the fact that my artistic abilities are incredibly lacking, it only makes sense that I would consider having algorithms make things for me.  Add in the coolness (read: geek) factor, and it's a wonder that I actually managed to get my other work done before plunging head-first into work on [ashvattha](http://github.com/cmaher/ashvattha/tree/cpp/src), the library that I'll be building to handle all of my PCG.
