@@ -17,9 +17,9 @@ Simplex noise is a complicated beast.  It's straight-forward mathematical operat
 
 With all of the hard work done for us, we really just need to figure out how to use the provided simplex noise functionality.  The various implementations provide a noise function that takes a coordinate and returns a floating-point noise value between -1 and 1, inclusive, where coordinates that are close to each other have similar values.  To make a general-purpose heightmap, we need to fill an MxN matrix with luminosity (light) values, between 0 and 255.  Let's normalize the simplex noise to our light range and populate our array:
 
-        for(i = 0; i &lt; M; ++i):
-            for(j = 0; j &lt; N; ++j):
-                luminance[i][j] = (simplex_noise(i, j) + 1) / 2.0  * 255.0
+    for(i = 0; i < M; ++i):
+        for(j = 0; j < N; ++j):
+            luminance[i][j] = (simplex_noise(i, j) + 1) / 2.0  * 255.0
 
 ![static noise](/images/simplex_noise/static.png)
 
@@ -27,41 +27,41 @@ That's all we need, right?  Well, it turns out that this produces an image that 
 
 From physics, we know that, for a wave, $$\textrm{frequency} = \frac{\textrm{velocity}}{\textrm{wavelength}}$$.  We don't have a convenient method of changing the wave length, so this means that we have to change our noise's velocity.  But what is the current velocity of our noise?  Recall that $$\textrm{velocity} = \frac{\textrm{distance}}{\textrm{time}}$$.  In our sample code, for each x, we increase our j by one in each cycle.  This means that our velocity is one.  In order to decrease our frequency, we need to decrease our velocity, and to do that, we need to scale the values that we send to our noise function by some small value:
 
-        scale = .007
-        for(i = 0; i &lt; M; ++i):
-           for(j = 0; j &lt; N; ++j):
-               luminance[i][j] = (simplex_noise(i * scale, j * scale) + 1) / 2.0 * 255.0
+    scale = .007
+    for(i = 0; i < M; ++i):
+       for(j = 0; j < N; ++j):
+           luminance[i][j] = (simplex_noise(i * scale, j * scale) + 1) / 2.0 * 255.0
 
 It turns out that we need to use a very small scale in order to produce good smooth noise like the type shown above.  I use .007, because I like to imagine a very small James Bond making things smooth and suave, but other values around .01 work well for my project.  You'll have to experiment with the scale to see what suits your purposes best.
 
 So now we have the smooth noise shown above, but compared to the banner image at the top of this article, it seems kind of boring and unsatisfactory.  In order to get that nice wispy look, we're going to need to use another technique: fractal Brownian motion.  This method works by using our noise function for multiple iterations, decreasing the amplitude and increasing the frequency in each successive iteration.  It then sums all these iterations together and takes the average.  From there, we can normalize the value and add the result to our array. 
 
-        def sumOcatave(num_iterations, x, y, persistence, scale, low, high):
-            maxAmp = 0
-            amp = 1
-            freq = scale
-            noise = 0
+    def sumOcatave(num_iterations, x, y, persistence, scale, low, high):
+        maxAmp = 0
+        amp = 1
+        freq = scale
+        noise = 0
 
-            //add successively smaller, higher-frequency terms
-            for(i = 0; i &lt; num_iterations; ++i):
-                noise += simplex_noise(x * freq, y * freq) * amp
-                maxAmp += amp
-                amp *= persistence
-                freq *= 2
+        //add successively smaller, higher-frequency terms
+        for(i = 0; i < num_iterations; ++i):
+            noise += simplex_noise(x * freq, y * freq) * amp
+            maxAmp += amp
+            amp *= persistence
+            freq *= 2
 
-            //take the average value of the iterations
-            noise /= maxAmp
+        //take the average value of the iterations
+        noise /= maxAmp
 
-            //normalize the result
-            noise = noise * (high - low) / 2 + (high + low) / 2
+        //normalize the result
+        noise = noise * (high - low) / 2 + (high + low) / 2
 
-            return noise
+        return noise
 
-        def main():
-            scale = .007
-            for(i = 0; i &lt; M; ++i):
-                for(j = 0; j &lt; N; ++j):
-                    luminance[i][j] = sumOctave(16, i, j, .5, scale, 0, 255)
+    def main():
+        scale = .007
+        for(i = 0; i < M; ++i):
+            for(j = 0; j < N; ++j):
+                luminance[i][j] = sumOctave(16, i, j, .5, scale, 0, 255)
 
 !["The results of Fractal Brownian Motion"](/images/simplex_noise/final.png)
 
