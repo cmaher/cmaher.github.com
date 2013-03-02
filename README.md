@@ -4,4 +4,4 @@ stylesheets and images root: copyright [mattgraham](http://twitter.com/#!/michig
 
 posts: copyright Christian Maher
 
-everything else: MIT
+everything else: MIT or original license
