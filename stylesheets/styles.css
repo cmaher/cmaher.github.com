@@ -96,7 +96,7 @@ img {
 }
 
 header {
-  width:270px;
+  width:200px;
   float:left;
   position:fixed;
 }
@@ -160,7 +160,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:600px;
   float:right;
   padding-bottom:50px;
 }
@@ -227,8 +227,9 @@ footer {
     padding:0;
   }
   
-  header ul, header p.view {
+  header p.view {
     position:static;
+    font-size:16pt;
   }
   
   pre, code {

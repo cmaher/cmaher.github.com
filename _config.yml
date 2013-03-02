@@ -1,3 +1,3 @@
 auto: true
-permalink: /:title
+permalink: /posts/:title/
 pygments: true
