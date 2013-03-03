@@ -205,7 +205,7 @@ footer {
   }
 
   section {
-   width:70%;
+    width:70%;
   }
 }
 
@@ -249,7 +249,11 @@ footer {
   header div.headerBottom img.mascot {
     float: right;
     position: relative;
-    top: 20px;
+    top: 30px;
+  }
+
+  section {
+    border-top: 1px solid #e5e5e5;
   }
 
   div.divider {
