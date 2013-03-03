@@ -193,6 +193,10 @@ footer {
   bottom:50px;
 }
 
+div.permalink {
+    float: right;
+}
+
 @media print, screen and (max-width: 960px) {
   div.wrapper {
     width:100%;

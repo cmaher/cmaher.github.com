@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Working with Simplex Noise
 ---
 

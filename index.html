@@ -3,4 +3,9 @@ layout: default
 title: cmaher's homepage 
 ---
 
-{{ site.posts.first.content }}
+<div class="post">
+    {{ site.posts.first.content }}
+</div>
+<div class="permalink">
+    [<a href="{{ site.posts.first.url }}">permalink</a>]
+</div>
