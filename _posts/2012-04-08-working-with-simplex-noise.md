@@ -27,7 +27,7 @@ for(i = 0; i < M; ++i):
 
 That's all we need, right?  Well, it turns out that this produces an image that doesn't look much better than white noise (that awful static you get on you TV when it doesn't get a proper signal).  How can we smooth this out?  First recall that the term "noise" is related to sound, and sound is just a wave.  So to simplify matters, we can think of our noise as a wave. Our current noise changes quickly from one value to another.  In wave terms, this means that our noise has a very high frequency.  What we want is noise with a low-frequency, so that values change gradually.
 
-From physics, we know that, for a wave, \\\(\textrm{frequency} = \frac{\textrm{velocity}}{\textrm{wavelength}}\\\).  We don't have a convenient method of changing the wave length, so this means that we have to change our noise's velocity.  But what is the current velocity of our noise?  Recall that \\\(\textrm{velocity} = \frac{\textrm{distance}}{\textrm{time}}\\\).  In the sample code, **i** and **j** are increased by one in each (time) step, so the velocity is one.  In order to decrease our frequency, we need to decrease our velocity, and to do that, we need to scale the values that we send to our noise function by some small value:
+From physics, we know that, for a wave, \\\(\textrm{frequency} = \frac{\textrm{velocity}}{\textrm{wavelength}}\\\).  We don't have a convenient method of changing the wave length, so this means that we have to change our noise's velocity.  But what is the current velocity of our noise?  Recall that \\\(\textrm{velocity} = \frac{\textrm{distance}}{\textrm{time}}\\\).  In the sample code, **i** and **j** (the distance) are increased by one in each (time) step, so the velocity is one.  In order to decrease our frequency, we need to decrease our velocity, and to do that, we need to scale the values that we send to our noise function by some small value:
 
 {% highlight python %}
 scale = .007
@@ -40,7 +40,7 @@ for(i = 0; i < M; ++i):
 
 It turns out that we need to use a very small **scale** in order to produce good smooth noise like the type shown above.  I use .007, because I like to imagine a very small James Bond making things smooth and suave, but other values around .01 work well for my project.  You'll have to experiment with the scale to see what suits your purposes best.
 
-So now we have the smooth noise shown above, but it still seems kind of boring and unsatisfactory.  Instead of the bland, smooth noise we want something a bit more chaotic and organic. To get this, we're going to need to use another technique: fractal Brownian motion.  This method works by using our noise function for multiple iterations, decreasing the amplitude and increasing the frequency in each successive iteration.  It then sums all these iterations together and takes the average.  From there, we can normalize the value and add the result to our array. 
+So now we have the smooth noise shown above, but it still seems kind of boring and unsatisfying.  Instead of purely smooth noise we want something a bit more chaotic and organic. To get this, we're going to need to use another technique: fractal Brownian motion.  This method works by using our noise function for multiple iterations, decreasing the amplitude and increasing the frequency in each successive iteration.  It then sums all these iterations together and takes the average.  From there, we can normalize the value and add the result to our array. 
 
 {% highlight python %}
 def sumOcatave(num_iterations, x, y, persistence, scale, low, high):
