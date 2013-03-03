@@ -165,8 +165,7 @@ header div {
   clear: both;
 }
 
-header img {
-  height: 128px;
+header div.headerBottom img.mascot {
   width: 128px;
 }
 
@@ -195,20 +194,22 @@ footer {
 }
 
 @media print, screen and (max-width: 960px) {
-
   div.wrapper {
     width:auto;
     margin:0;
   }
 
   header, section, footer {
-    float:none;
     position:static;
     width:auto;
   }
 
   header {
-    padding-right:320px;
+      width: 30%
+  }
+
+  section {
+      width: 70%
   }
 
   section {
@@ -257,7 +258,12 @@ footer {
     display:none;
   }
 
+  header div {
+    clear: none;
+  }
+
   header div.headerTop {
+    width: 50%;
     float: left;
   }
 
@@ -265,10 +271,15 @@ footer {
     float: left;
   }
 
+  header div.headerBottom img.mascot {
+    float: right;
+    position: relative;
+    top: 20px;
+  }
+
   div.divider {
     clear: both;
   }
-
 }
 
 @media print {
