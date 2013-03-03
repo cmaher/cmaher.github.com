@@ -165,10 +165,6 @@ header div {
   clear: both;
 }
 
-header div.headerBottom img.mascot {
-  width: 128px;
-}
-
 section {
   width:600px;
   float:right;
