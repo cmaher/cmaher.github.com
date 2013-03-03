@@ -254,6 +254,7 @@ footer {
 
   section {
     border-top: 1px solid #e5e5e5;
+    padding-top: 20px;
   }
 
   div.divider {
@@ -264,6 +265,7 @@ footer {
 @media print, screen and (max-width: 480px) {
   body {
     padding:15px;
+    font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   header ul {
