@@ -18,4 +18,4 @@ title: Reading list
 - [JavaScript: The Good Parts](http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/) - Douglas Crockford
 - [Eloquent Ruby](http://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional/dp/0321584104/) - Russ Olsen
 - [Programming in Scala](http://www.amazon.com/Programming-Scala-Comprehensive-Step---Step/dp/0981531644/ )- Martin Odersky, Lex Spoon, and Bill Venners
-- [Learn You a Haskell for Great Good!](learnyouahaskell.com) - Miran Lipovača
+- [Learn You a Haskell for Great Good!](learnyouahaskell.com) - Miran Lipova<small>č</small>a
