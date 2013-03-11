@@ -3,8 +3,8 @@
 body {
   padding:50px;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#686868;
-  font-weight:300;
+  color:#000;
+  font-weight:350;
   background-image: url('/images/fabric_of_squares_gray.png');
 }
 
@@ -34,7 +34,7 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  color:#2869EA;
   font-weight:400;
   text-decoration:none;
 }
