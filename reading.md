@@ -6,7 +6,6 @@ title: Reading list
 #Current
 
 - [Secrets of the JavaScript Ninja](http://www.amazon.com/Secrets-JavaScript-Ninja-John-Resig/dp/193398869X/) - John Resig and Bear Bibeault
-- [The Pragmatic Programmer](http://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X/) - Andrew Hunt and David Thomas
 - [Ruby on Rails Tutorial](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book) - Michael Hartl
 
 #Upcoming
@@ -19,3 +18,4 @@ title: Reading list
 - [Eloquent Ruby](http://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional/dp/0321584104/) - Russ Olsen
 - [Programming in Scala](http://www.amazon.com/Programming-Scala-Comprehensive-Step---Step/dp/0981531644/ )- Martin Odersky, Lex Spoon, and Bill Venners
 - [Learn You a Haskell for Great Good!](learnyouahaskell.com) - Miran Lipova<small>č</small>a
+- [The Pragmatic Programmer](http://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X/) - Andrew Hunt and David Thomas
