@@ -5,7 +5,6 @@ title: Reading list
 
 #Current
 
-- [Secrets of the JavaScript Ninja](http://www.amazon.com/Secrets-JavaScript-Ninja-John-Resig/dp/193398869X/) - John Resig and Bear Bibeault
 - [Ruby on Rails Tutorial](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book) - Michael Hartl
 
 #Upcoming
