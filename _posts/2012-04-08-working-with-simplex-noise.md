@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Working with Simplex Noise
+excerpt: <img src="/images/simplex_noise/banner.png"/> Simplex noise is a method for generating smoothly changing pseudo-random numbers that can be used for procedural content generation. This post explains how to harness simplex noise to achieve nice whispy noise like the image above.
 ---
 
 #Working with Simplex Noise
@@ -40,7 +41,7 @@ for(i = 0; i < M; ++i):
 
 It turns out that we need to use a very small **scale** in order to produce good smooth noise like the type shown above.  I use .007, because I like to imagine a very small James Bond making things smooth and suave, but other values around .01 work well for my project.  You'll have to experiment with the scale to see what suits your purposes best.
 
-So now we have the smooth noise shown above, but it still seems kind of boring and unsatisfying.  Instead of purely smooth noise we want something a bit more chaotic and organic. To get this, we're going to need to use another technique: fractal Brownian motion.  This method works by using our noise function for multiple iterations, decreasing the amplitude and increasing the frequency in each successive iteration.  It then sums all these iterations together and takes the average.  From there, we can normalize the value and add the result to our array. 
+So now we have the smooth noise shown above, but it still seems kind of boring and unsatisfying.  Instead of purely smooth noise we want something a bit more chaotic and organic. To get this, we're going to need to use another technique: fractal Brownian motion.  This method works by using our noise function for multiple iterations, decreasing the amplitude and increasing the frequency in each successive iteration.  It then sums all these iterations together and takes the average.  From there, we can normalize the value and add the result to our array.
 
 {% highlight python %}
 def sumOcatave(num_iterations, x, y, persistence, scale, low, high):

@@ -1,11 +1,16 @@
 ---
 layout: default
-title: cmaher's homepage 
+title: cmaher's homepage
 ---
 
-<div class="post">
-    {{ site.posts.first.content }}
-</div>
-<div class="permalink">
-    [<a href="{{ site.posts.first.url }}">permalink</a>]
-</div>
+{% for post in site.posts %}
+  {% if post.customLink %}
+  <h2><a href="{{ post.customLink }}">{{ post.title }}</a></h2>
+  {% else %}
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  {% endif %}
+  <div>
+    {{ post.excerpt }}
+  </div>
+<hr>
+{% endfor %}
