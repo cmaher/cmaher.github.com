@@ -175,6 +175,8 @@ div.permalink {
 
 .video-embed {
   text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 .video-embed iframe {
@@ -183,8 +185,18 @@ div.permalink {
 }
 
 .social-icon {
-  height: 16px;
+  height: 32px;
   margin-right: 8px;
+}
+
+.post-divider {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.excerpt-image {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 @media print, screen and (max-width: 960px) {
