@@ -4,9 +4,13 @@ title: Working with Simplex Noise
 excerpt: <img class="excerpt-image" src="/images/simplex_noise/banner.png"/> Simplex noise is a method for generating smoothly changing pseudo-random numbers that can be used for procedural content generation. This post explains how to harness simplex noise to achieve nice whispy noise like the image above.
 ---
 
+## Update
+
+It turns out that [Simplex Noise is patented](http://www.google.com/patents/US6867776).  [OpenSimplexNoise](https://gist.github.com/KdotJPG/b1270127455a94ac5d19) is a free alternative.
+
 #Working with Simplex Noise
 
-Recently, I've been getting into procedural content generation (PCG), with the end-goal of procedurally generating entire worlds.  When you consider the fact that my artistic abilities are incredibly lacking, it only makes sense that I would consider having algorithms make things for me.  Add in the coolness (read: geek) factor, and it's a wonder that I actually managed to get my other work done before plunging head-first into work on [ashvattha](http://github.com/cmaher/ashvattha/tree/cpp/src), the library that I'll be building to handle all of my PCG.
+Recently, I've been getting into procedural content generation (PCG), with the end-goal of procedurally generating entire worlds.  When you consider the fact that my artistic abilities are incredibly lacking, it only makes sense that I would consider having algorithms make things for me.  Add in the coolness (read: geek) factor, and it's a wonder that I actually managed to get my other work done before plunging head-first into some PCG experimentation.
 
 Being new to the world of PCG, I decided to do some research.  The first thing I learned was that I would need a decent noise implementation to generate random values.  Ken Perlin seems to be *the* name in noise functions.  He made his original algorithm for Perlin noise while working on the original Tron, and he released an improved noise function, simplex noise, back in 2001. These noise functions produce pseudo-random smooth gradients.  This noise results in a very natural appearance, so you might have come across it if you've done work with terrain heightmaps or particle effects.
 
@@ -93,3 +97,5 @@ So we have some good-looking noise that we can apply to textures or make a heigh
 [An article explaining Perlin noise, octaves, and fun textures](http://freespace.virgin.net/hugo.elias/models/m_perlin.htm)
 
 [Wiki's Introduction to Simplices](http://en.wikipedia.org/wiki/Simplex)
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
