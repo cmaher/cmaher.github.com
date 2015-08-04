@@ -9,4 +9,3 @@ While working on user-generated workspaces (dashboard applications) at [Conducto
 > Enter Backbone.Hoard, a Backbone plugin I wrote to de-dupe XHRs and prevent future requests by caching responses, all without changing the API of Backbone’s Models and Collections.
 
 [Read on](http://www.conductor.com/nightlight/using-backbone-hoard-spare-server-sanity/) to learn how the need for Backbone.Hoard arose, and how Conductor engineers use it to simplify development while reducing ajax requests.
-

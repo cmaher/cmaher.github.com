@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Backbone.Hoard - XHR Consolidation and Caching for Backbone
+video: "https://www.youtube.com/watch?v=g8iBlDaU7VU"
 customLink: "https://www.youtube.com/watch?v=g8iBlDaU7VU"
 ---
 <div class="video-embed">

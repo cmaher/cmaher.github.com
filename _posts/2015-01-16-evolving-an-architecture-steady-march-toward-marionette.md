@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Evolving an Architecture - The Steady March Toward Marionette
+video: "https://www.youtube.com/watch?v=HRhKG-l2Qis"
 customLink: "https://www.youtube.com/watch?v=HRhKG-l2Qis"
 ---
 <div class="video-embed">

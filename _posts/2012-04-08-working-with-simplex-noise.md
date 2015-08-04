@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Working with Simplex Noise
-excerpt: <img class="excerpt-image" src="/images/simplex_noise/banner.png"/> Simplex noise is a method for generating smoothly changing pseudo-random numbers that can be used for procedural content generation. This post explains how to harness simplex noise to achieve nice whispy noise like the image above.
+img: "/images/simplex_noise/banner.png"
+excerpt: Simplex noise is a method for generating smoothly changing pseudo-random numbers that can be used for procedural content generation. This post explains how to harness simplex noise to achieve nice whispy noise like the image above.
 ---
 
 ## Update
