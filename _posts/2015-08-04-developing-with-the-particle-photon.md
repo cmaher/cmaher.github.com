@@ -8,7 +8,7 @@ desc: Reviewing the Particle Photon development experience while making an inter
 
 # Developing with the Particle Photon
 
-While I was searching for an easy way to bring the internet-of-things to my home, the [Particle Photon](particle.io) caught my eye.  I had previously rejected the Arduino WiFi shield as too expensive and the ESP8266 as too obtuse, so I immediately ordered some Photons for development.  When they arrived, I had already decided on my first project– controlling my air conditioner over the internet.
+While I was searching for an easy way to bring the internet-of-things to my home, the [Particle Photon](https://www.particle.io/) caught my eye.  I had previously rejected the Arduino WiFi shield as too expensive and the ESP8266 as too obtuse, so I immediately ordered some Photons for development.  When they arrived, I had already decided on my first project– controlling my air conditioner over the internet.
 
 ![particle photon installed with air conditioner](/images/developing-with-the-particle-photon/installed.jpg)
 
