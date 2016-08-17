@@ -37,8 +37,16 @@
                             <img class="social-icon" src="/images/twitter-icon.svg" alt="twitter profile"/>
                           </a>
                         </li>
-                        <li>
-                          <a href="http://conductor.github.io/backbone.hoard">Backbone.Hoard</a>
+                        <li class="posts-list">
+                          <ul>
+                            {% for post in site.posts %}
+                              {% unless post.customLink %}
+                                <li>
+                                  <a href="{{ post.url }}">{{ post.title }}</a>
+                                </li>
+                              {% endunless %}
+                            {% endfor %}
+                          </ul>
                         </li>
                       </ul>
                     </nav>
