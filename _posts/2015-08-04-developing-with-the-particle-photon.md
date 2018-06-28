@@ -12,7 +12,7 @@ While I was searching for an easy way to bring the internet-of-things to my home
 
 ![particle photon installed with air conditioner](/images/developing-with-the-particle-photon/installed.jpg)
 
-One of the things people from outside of New York might not associate with the city is the ubiquity of in-window air conditioners.  In fact, [most of us get by without central air](http://www.eia.gov/consumption/residential/reports/2009/air-conditioning.cfm).  my air conditioner has an infrared remote that lets me control it while enjoying the comfort of my couch but not when I’m away from my apartment. This means that I often experience the joy of coming out of the sweltering 95° heat into my refreshing 92° apartment.  When I found the Particle Photon, I saw it as a chance to alleviate myself of the summer’s problems.
+One of the things people from outside of New York might not associate with the city is the ubiquity of in-window air conditioners.  In fact, [most of us get by without central air](http://www.eia.gov/consumption/residential/reports/2009/air-conditioning.cfm).  My air conditioner has an infrared remote that lets me control it while enjoying the comfort of my couch but not when I’m away from my apartment. This means that I often experience the joy of coming out of the sweltering 95° heat into my refreshing 92° apartment.  When I found the Particle Photon, I saw it as a chance to alleviate myself of the summer’s problems.
 
 ## Initial Setup
 
