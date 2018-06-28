@@ -5,11 +5,7 @@ img: "/images/simplex_noise/banner.png"
 excerpt: Simplex noise is a method for generating smoothly changing pseudo-random numbers that can be used for procedural content generation. This post explains how to harness simplex noise to achieve nice whispy noise like the image above.
 ---
 
-## Update
-
-It turns out that [Simplex Noise is patented](http://www.google.com/patents/US6867776).  [OpenSimplexNoise](https://gist.github.com/KdotJPG/b1270127455a94ac5d19) is a free alternative.
-
-#Working with Simplex Noise
+# Working with Simplex Noise
 
 Recently, I've been getting into procedural content generation (PCG), with the end-goal of procedurally generating entire worlds.  When you consider the fact that my artistic abilities are incredibly lacking, it only makes sense that I would consider having algorithms make things for me.  Add in the coolness (read: geek) factor, and it's a wonder that I actually managed to get my other work done before plunging head-first into some PCG experimentation.
 
@@ -83,8 +79,11 @@ This finally gets us the results we want.  In the above code, each iteration is 
 
 So we have some good-looking noise that we can apply to textures or make a heightmap, etc.  But using fractal Brownian motion isn't the only way to get cool results out of noise.  By using different techniques, you can use basic simplex noise to procedurally generate textures that look remarkably like dust, fire, marble, or even wood.  You can try to figure these out on your own, or look around on the internet (note: techniques for using Perlin noise will pretty much get the same results with simplex noise).  If you want to learn more, the links throughout the article, and below should help you.
 
+## Update
 
-####Resources
+It turns out that [Simplex Noise is patented](http://www.google.com/patents/US6867776).  [OpenSimplexNoise](https://gist.github.com/KdotJPG/b1270127455a94ac5d19) is a free alternative.
+
+#### Resources
 [Clojure implementation of layered noise functions using OpenSimplexNoise](https://github.com/cmaher/noise)
 
 [C and C++ implementations](http://staffwww.itn.liu.se/~stegu/aqsis/aqsis-newnoise/)
